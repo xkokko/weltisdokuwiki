@@ -1,0 +1,27 @@
+
+/* ### ### ### */
+
+#weltis__aside > .aside {
+	/* Font */
+	font-size: .8rem;
+	/* Settings */
+	word-wrap: break-word;
+	/* Box */
+	padding: 2rem;
+	/* Size */
+	width: 12rem;
+}
+
+#weltis__aside > .aside li ul,
+#weltis__aside > .aside li ol {
+	/* Box */
+	padding: 0;
+	margin-bottom: 0;
+}
+
+#weltis__aside > .aside ul,
+#weltis__aside > .aside ol {
+	/* Box */
+	padding-left: .5rem;
+}
+

@@ -1,0 +1,232 @@
+
+/* ### ### ### */
+
+form.changes {
+	/* Font */
+	font-size: .8rem;
+}
+
+form.changes ul li {
+	/* Settings */
+	list-style: none;
+	/* Box */
+	margin-left: 0;
+}
+
+form.changes ul li.minor {
+	/* Settings */
+	opacity: .5;
+}
+
+form.changes ul li span,
+form.changes ul li a {
+	/* Position */
+	vertical-align: middle;
+}
+
+form.changes ul li a.diff__link {
+	/* Position */
+	vertical-align: baseline;
+}
+form.changes ul li img {
+	/* Position */
+	vertical-align: middle;
+	/* Box */
+	border: 0 ! important;
+}
+
+form.changes ul li span.sum {
+	/* Font */
+	font-weight: bold;
+}
+
+form.changes li .sizechange {
+	/* Font */
+	font-size: .7rem;
+	/* Color */
+	color: var(--main-color);
+	/* Box */
+	padding: .1rem .2rem;
+}
+form.changes li .sizechange.positive {
+	/* Color */
+	background-color: var(--top-color-alpha);
+}
+form.changes li .sizechange.negative {
+	/* Color */
+	background-color: var(--bot-color-alpha);
+}
+
+/* ### ### ### */
+
+div.diffoptions {
+	/* Display */
+	display: flex;
+	justify-content: space-between;
+	/* Position */
+	position: relative;
+	/* Size */
+	width: 100%;
+}
+
+div.table table.diff {
+	/* Vars */
+	/* Display */
+	/* Flex */
+	/* Position */
+	position: relative;
+	/* Settings */
+	/*
+	table-layout: fixed;
+	*/
+	/* Font */
+	/* Text */
+	/* Color */
+	/* Box */
+	border: 0;
+	/* Size */
+	width: 100%;
+}
+
+
+
+table.diff_sidebyside td.diffnav {
+	/* Box */
+	padding-bottom: .7rem;
+}
+
+.diffnav a:before {
+	/* Display */
+	display: inline-block;
+	/* Position */
+	vertical-align: middle;
+	/* Color */
+	color: inherit;
+	/* Box */
+	padding: .2rem .4rem;
+	border: .1rem solid var(--lite-color);
+}
+
+.diffnav a.diffbothprevrev:before {
+	/* Settings */
+	content: "\25C0\25C0";
+}
+.diffnav a.diffprevrev:before {
+	/* Settings */
+	content: "\25C0";
+}
+.diffnav a.diffnextrev:before {
+	/* Settings */
+	content: "\25B6";
+}
+
+.diffnav a span {
+	/* Display */
+	display: none;
+}
+
+.diffnav select {
+	/* Size */
+	height: 1.5rem;
+	min-width: 60%;
+	width: 60%;
+}
+
+
+
+table.diff th,
+table.diff td {
+	/* Settings */
+	vertical-align: top;
+	/* Color */
+	color: var(--anti-color);
+	background: var(--main-color);
+	/* Box */
+	padding: 0;
+	border: 0;
+}
+
+table.diff th {
+	/* Font */
+	font-weight: normal;
+	/* Box */
+	border-bottom: .1rem solid var(--lite-color);
+}
+table.diff th.minor {
+	/* Color */
+	color: var(--lite-color);
+}
+table.diff th a {
+	/* Font */
+	font-weight: bold;
+}
+table.diff th span.user {
+	/* Font */
+	font-size: .8rem;
+}
+table.diff th span.sum {
+	/* Font */
+	font-size: .8rem;
+	font-weight: bold;
+}
+
+
+
+table.diff_sidebyside th {
+	/* Size */
+	width: 50%;
+}
+
+
+
+table.diff td.diff-blockheader {
+	/* Font */
+	font-weight: bold;
+}
+
+
+
+table.diff .diff-lineheader {
+	/* Text */
+	text-align: right;
+	/* Size */
+	width: .7rem;
+}
+
+
+
+table.diff td,
+table.diff .diff-lineheader {
+	/* Font */
+	font-family: var(--font-monospaced);
+}
+
+
+
+table.diff td.diff-context {
+	/* Settings */
+	opacity: .5;
+	/* Color */
+	color: inherit;
+	background: var(--main-color);
+}
+
+table.diff .diff-addedline {
+	/* Color */
+	color: inherit;
+	background-color: var(--top-color-alpha);
+}
+table.diff .diff-deletedline {
+	/* Color */
+	color: inherit;
+	background-color: var(--bot-color-alpha);
+}
+table.diff .diff-addedline strong,
+table.diff .diff-deletedline strong {
+	/* Font */
+	font-weight: bold;
+	/* Color */
+	color: var(--mid-color);
+}
+
+

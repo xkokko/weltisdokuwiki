@@ -1,0 +1,63 @@
+
+/* ### ### ### */
+
+#weltis__main > .wrapper {
+	/* Display */
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: stretch;
+	gap: 3rem;
+	/* Position */
+	position: relative;
+	/* Box */
+	margin: 5rem 10rem 7rem;
+}
+
+#weltis__content > .content,
+#weltis__detail > .content {
+	/* Display */
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: end;
+	gap: 1rem;
+	/* Position */
+	position: relative;
+	/* Size */
+	max-width: var(--max-width-content);
+}
+
+#weltis__content > .content .page,
+#weltis__detail > .content .page {
+	/* Flex */
+	align-self: center;
+	/* Box */
+	margin-bottom: 3rem;
+	/* Size */
+	height: 10rem;
+	height: auto;
+	min-height: 10rem;
+}
+
+#weltis__content > .content .page img {
+	/* Color */
+	background: var(--main-color);
+}
+
+#weltis__content > .content .page > .footnotes,
+#weltis__detail > .content .page > .footnotes {
+	/* Box */
+	padding-top: 1rem;
+	border-top: 1px solid var(--lite-color);
+	margin-top: 2rem;
+}
+
+#weltis__content > .content .pageId,
+#weltis__content > .content .docInfo,
+#weltis__detail > .content .pageId,
+#weltis__detail > .content .docInfo {
+	/* Font */
+	font-size: .8rem;
+	/* Color */
+	color: var(--lite-color);
+}

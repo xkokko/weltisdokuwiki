@@ -1,0 +1,141 @@
+
+/* ### ### ### */
+
+#weltis__header .header .group {
+	/* Display */
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	/* Position */
+	position: relative;
+}
+
+#weltis__header .headings {
+	/* Display */
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	/* Color */
+	background: var(--anti-color);
+	color: var(--main-color);
+	/* Size */
+	min-height: 3rem;
+}
+
+#weltis__header .headings .titlehead,
+#weltis__header .headings .tagline {
+	/* Box */
+	margin: 0 1rem;
+}
+
+#weltis__header .headings .title {
+	/* Font */
+	font-family: var(--title-font), Verdana, sans-serif;
+	font-size: 2rem;
+	/* Text */
+	text-transform: var(--title-text);
+	/* Box */
+	margin: 0;
+}
+
+#weltis__header .headings .tagline {
+	/* Font */
+	font-size: 1rem;
+}
+
+#weltis__header .tools {
+	/* Display */
+	flex-flow: row-reverse nowrap;
+	justify-content: end;
+	/* Color */
+	background: var(--dark-color);
+	color: var(--main-color);
+	/* Box */
+	padding: 0 2rem;
+	/* Size */
+	min-height: 2rem;
+}
+
+#weltis__usertools,
+#weltis__sitetools,
+#weltis__pagetools {
+	/* Position */
+	position: relative;
+}
+
+#weltis__header .menulist {
+	/* Display */
+	display: none;
+	/* Position */
+	position: absolute;
+	top: 100%;
+	right: -1rem;
+	z-index: 1;
+	/* Font */
+	font-size: .9rem;
+	/* Text */
+	text-wrap: nowrap;
+	/* Settings */
+	list-style: none;
+	/* Size */
+	min-width: 15rem;
+}
+
+#weltis__header .menulist > li,
+#weltis__header .menulist > span {
+	/* Box */
+	padding: .5rem .8rem;
+	margin-left: 0;
+}
+#weltis__header .menulist > li {
+	/* Color */
+	background: var(--dark-color);
+}
+#weltis__header .menulist > span {
+	/* Color */
+	background: var(--lite-color);
+}
+
+#weltis__header .menuhead:focus + .menulist,
+#weltis__header .menuhead:hover + .menulist,
+#weltis__header .menulist:hover {
+	/* Display */
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+#qsearch__in,
+#qsearch__in::placeholder {
+	/* Font */
+	font-family: inherit;
+	font-size: inherit;
+	/* Color */
+	color: inherit;
+	background: inherit;
+	/* Box */
+	padding: 0;
+	outline: 0;
+	border: 0;
+	margin: 0;
+}
+
+#qsearch__out {
+	/* Display */
+	display: none;
+}
+
+#weltis__header .header > .breadcrumbs {
+	/* Font */
+	font-size: .8rem;
+	/* Color */
+	background: var(--lite-color);
+	color: var(--main-color);
+	/* Size */
+	min-height: 1.5rem;
+	/* Box */
+	padding-left: 1rem;
+}
+
+#weltis__header .breadcrumbs .curid a {
+	/* Font */
+	font-weight: bold;
+}

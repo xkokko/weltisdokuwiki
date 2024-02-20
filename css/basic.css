@@ -1,0 +1,583 @@
+
+/* ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ // k o k k o // u t f - 8 // ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ //
+// ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ // k o k k o // u t f - 8 // ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ //
+// ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ // k o k k o // u t f - 8 // ¤ ¤ ¤ ¤ ¤ // ¤ ¤ ¤ ¤ ¤ */
+
+/* ### ### ### */
+	/* Vars */
+	/* Display */
+	/* Flex */
+	/* Position */
+	/* Settings */
+	/* Font */
+	/* Text */
+	/* Color */
+	/* Box */
+	/* Size */
+
+:root {
+	/* Vars */
+	--title-font: Archemy;
+	--title-text: lowercase;
+	--main-color: #eee;
+	--lite-color: #666;
+	--dark-color: #444;
+	--anti-color: #222;
+	--top-color: #00b283;
+	--mid-color: #007cb3;
+	--bot-color: #8985d8;
+	--out-color: #00d2db;
+	--top-color-alpha: #00b2837b;
+	--mid-color-alpha: #007cb37b;
+	--bot-color-alpha: #8985d87b;
+	--out-color-alpha: #00d2db7b;
+	--max-width-content: 45rem;
+	--font-monospaced: Consolas, "Andale Mono WT", "Andale Mono", "Bitstream Vera Sans Mono", "Nimbus Mono L", Monaco, "Courier New", monospace;
+}
+
+[hidden] {
+	/* Display */
+	display: none !important;
+}
+
+/* ### ### ### */
+
+html,
+body {
+	/* Settings */
+	transition-duration: 0.2s;
+	/* Font */
+	font-family: "Verdana", sans-serif;
+	font-size: 12pt;
+	/* Box */
+	padding: 0;
+	border: 0;
+	margin: 0;
+	/* Size */
+	height: 100%;
+	width: 100%;
+}
+
+body,
+#weltis__site,
+#dokuwiki__top {
+	/* Display */
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	/* Position */
+	position: relative;
+	/* Font */
+	font-family: inherit;
+	font-size: 0.9rem;
+	/* Color */
+	background: var(--main-color);
+	color: var(--anti-color);
+	/* Size */
+	min-height: 100%;
+	max-height: fit-content;
+}
+
+/* ### ### ### */
+
+div, video, audio {
+	/* Box */
+	padding: 0;
+	margin: 0;
+}
+
+ul, ol, pre, table, hr, blockquote, figure, details, fieldset, address {
+	margin: 0 0 1rem 0;
+	padding: 0;
+}
+
+li ul, li ol, li dl, dl ul, dl ol, dl dl {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+dl {
+	margin: 0;
+	padding: 0;
+}
+
+h1 a {
+	/* Text */
+	text-decoration: none !important;
+	/* Color */
+	color: inherit !important;
+}
+
+ul, ol {
+	/* Box */
+	padding: 0 0 0 1rem;
+}
+li, dd {
+	/* Box */
+	padding: 0;
+	margin: 0 0 0 1.5em;
+}
+dt {
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+ul {
+	/* Settings */
+	list-style: square outside;
+}
+li {
+	/* Display */
+	display: list-item;
+}
+li::marker {
+	/* Color */
+	color: var(--lite-color);
+}
+
+a:link:hover,
+a:link:focus,
+a:link:active,
+a:visited:hover,
+a:visited:focus,
+a:visited:active {
+	/* Text */
+	text-decoration: underline;
+}
+a:link, a:visited {
+	/* Text */
+	text-decoration: none;
+	/* Color */
+	color: var(--top-color);
+}
+a.wikilink1 {
+	/* Color */
+	color: var(--mid-color);
+	background-color: inherit;
+}
+a.wikilink2 {
+	/* Color */
+	color: var(--bot-color);
+	background-color: inherit;
+}
+a.urlextern,
+a.windows,
+a.mail,
+a.mediafile,
+a.interwiki {
+	/* Position */
+	position: relative;
+	/* Settings */
+	background-repeat: no-repeat;
+	background-position: 0 center;
+	/* Box */
+	padding-left: 20px;
+}
+a.urlextern {
+	/* Settings */
+	background-image: url("images/world.png");
+}
+a.mail {
+	/* Settings */
+	background-image: url("images/mail.png");
+}
+
+blockquote {
+	/* Color */
+	/*
+	color: var(--main-color);
+	background: var(--lite-color);
+	*/
+	/* Box */
+	padding: .4rem .8rem;
+	border-left: .3rem solid var(--dark-color);
+}
+blockquote a {
+	/* Color */
+	color: var(--top-color) ! important;
+}
+
+img.medialeft {
+	/* Box */
+	margin: .4rem 1rem .4rem 0;
+}
+img.mediacenter {
+	/* Box */
+	margin: .4rem auto;
+}
+img.mediaright {
+	/* Box */
+	margin: .4rem 0 .4rem 1rem;
+}
+
+form.search button {
+	/* Text */
+	text-indent: -999rem ! important;
+	/* Color */
+	background: transparent url("images/search.png") no-repeat 0 0;
+	background-size: 1rem;
+	/* Box */
+	padding: 0;
+	border: 0;
+	/* Size */
+	height: 1rem;
+	width: 1rem;
+}
+
+acronym, abbr {
+	/* Font */
+	font-style: normal;
+	/* Settings */
+	cursor: help;
+}
+
+form {
+	/* Display */
+	display: inline;
+	/* Box */
+	border: none;
+}
+
+sub, sup {
+	/* Font */
+	font-size: .7rem;
+	/* Settings */
+	line-height: 1;
+}
+
+sup {
+	/* Position */
+	vertical-align: super;
+}
+
+pre, samp, kbd, code {
+	/* Display */
+	/* Flex */
+	/* Position */
+	/* Settings */
+	/* Font */
+	font-family: var(--font-monospaced) ! important;
+	font-size: inherit;
+	/* Text */
+	text-align: left;
+	direction: ltr;
+	/* Color */
+	color: var(--main-color);
+	background-color: var(--dark-color);
+	/* Box */
+	padding: .1rem .3rem;
+	/* Size */
+}
+
+th, td {
+	/* Position */
+	vertical-align: top;
+	/* Settings */
+	word-wrap: break-word;
+	/* Color */
+	color: var(--anti-color);
+	background-color: var(--main-color);
+	/* Box */
+	padding: 0;
+	border: 0;
+}
+th {
+	/* Text */
+	text-align: left;
+}
+
+table {
+	position: relative;
+	border-collapse: collapse;
+	empty-cells: show;
+	border-spacing: 0;
+	border: 1px solid var(--lite-color);
+}
+
+.group:before,
+.group:after {
+	/* Display */
+	display: none;
+}
+
+/* ### ### ### */
+
+:focus-visible {
+	/* Box */
+	outline: .1rem solid var(--dark-color);
+	outline-offset: 1px;
+}
+
+/* ### ### ### */
+
+p {
+	/* Settings */
+	list-style: none;
+	/* Font */
+	font-family: inherit;
+	font-size: inherit;
+	/* Text */
+	text-decoration: inherit;
+	text-indent: -1rem;
+	/* Color */
+	color: inherit;
+	background: inherit;
+	/* Box */
+	outline: 0;
+	border: 0;
+	padding: 0;
+	padding-left: 1rem;
+	margin: 0 0 1rem 0;
+}
+
+/* ### ### ### */
+
+select {
+	/* Position */
+	position: relative;
+	/* Settings */
+	cursor: inherit;
+	line-height: inherit;
+	/* Font */
+	font-family: inherit;
+	font-size: inherit;
+	/* Color */
+	color: inherit;
+	background-color: var(--main-color);
+	/* Box */
+	padding: .1rem .2rem;
+	outline: 0;
+	border: .1rem solid var(--lite-color);
+	margin: 0;
+	/* Size */
+	max-width: 100%;
+}
+select:hover,
+select:active {
+	/* Box */
+	outline: .1rem solid var(--dark-color);
+	outline-offset: 0;
+}
+
+/* ### ### ### */
+
+textarea.edit {
+	/* Settings */
+	resize: vertical;
+	/* Font */
+	font-family: var(--font-monospaced);
+	/* Color */
+	color: var(--main-color);
+	background-color: var(--anti-color);
+	/* Box */
+	border: .1rem solid var(--lite-color);
+	margin-bottom: .5rem;
+	/* Size */
+	width: 100%;
+}
+
+/* ### ### ### */
+
+form fieldset {
+	/* Display */
+	display: flex;
+	flex-flow: column nowrap;
+	gap: .2rem;
+	/* Text */
+	text-align: center;
+	/* Box */
+	padding: 1rem;
+	border: .1rem solid var(--lite-color);
+	margin: 2rem auto 3rem auto;
+	/* Size */
+	width: 75%;
+}
+
+/* ### ### ### */
+
+ul.idx {
+	/* Box */
+	padding-left: 0;
+}
+
+/* ### ### ### */
+
+label {
+	/* Position */
+	vertical-align: middle;
+	/* Settings */
+	cursor: pointer;
+	/* Text */
+	text-align: center;
+}
+
+label.block {
+	/* Display */
+	display: block;
+	/* Font */
+	font-size: .8rem;
+	font-weight: bold;
+	/* Text */
+	text-align: right;
+}
+label.block input.edit {
+	/* Size */
+	width: 50%;
+}
+
+label.simple {
+	/* Display */
+	display: block;
+	/* Font */
+	font-weight: normal;
+	/* Text */
+	text-align: left;
+	/* Box */
+	padding: 0 .5rem;
+	margin-bottom: .5rem;
+}
+
+/* ### ### ### */
+
+button {
+	/* Position */
+	vertical-align: middle;
+	/* Settings */
+	cursor: pointer;
+	/* Font */
+	font-family: inherit;
+	font-size: inherit;
+	/* Color */
+	color: var(--main-color);
+	background-color: var(--dark-color);
+	/* Box */
+	padding: .2rem .5rem;
+	outline: 0;
+	border: .1rem solid var(--anti-color);
+	margin: .1rem .2rem;
+}
+button:hover {
+	/* Color */
+	color: var(--main-color);
+	background-color: var(--lite-color);
+}
+button:focus-visible {
+	/* Box */
+	outline: .1rem solid var(--dark-color);
+	outline-offset: 1px;
+}
+button:active {
+	/* Color */
+	color: var(--anti-color);
+	background-color: var(--main-color);
+}
+
+/* ### ### ### */
+
+input, input:focus, input:active {
+	/* Font */
+	font: inherit;
+	font-weight: revert;
+	/* Color */
+	color: inherit;
+	background: inherit;
+	/* Box */
+	padding: .1rem .2rem;
+	outline: 0;
+	border: .1rem solid var(--lite-color);
+	margin: 0;
+}
+input:focus-visible {
+	/* Box */
+	outline: .1rem solid var(--dark-color);
+	outline-offset: 0;
+}
+input::placeholder {
+	/* Color */
+	color: var(--lite-color);
+}
+
+input[type="checkbox"] {
+	/* Position */
+	vertical-align: text-bottom;
+	/* Settings */
+	cursor: pointer;
+	appearance: none;
+	/* Font */
+	font: inherit;
+	/* Color */
+	color: var(--anti-color);
+	background-color: var(--main-color);
+	/* Box */
+	border: .1rem solid var(--anti-color);
+	margin: 0;
+	/* Size */
+	height: 1rem;
+	width: 1rem;
+}
+input[type="checkbox"]:focus-visible {
+	/* Box */
+	outline: .1rem solid var(--dark-color);
+}
+input[type="checkbox"]:checked {
+	/* Color */
+	background-color: var(--lite-color);
+}
+
+/* ### ### ### */
+
+input[disabled],
+button[disabled],
+select[disabled],
+textarea[disabled],
+option[disabled],
+input[readonly],
+button[readonly],
+select[readonly],
+textarea[readonly] {
+	/* Settings */
+	cursor: auto;
+	opacity: .5;
+}
+
+/* ### ### ### */
+
+.secedit {
+	/* Position */
+	float: right;
+	/* Box */
+	margin-top: -1.3rem;
+}
+.secedit button {
+	/* Font */
+	font-size: .7rem;
+}
+
+/* ### ### ### */
+
+div.section_highlight {
+	/* Box */
+	outline: .1rem solid var(--lite-color);
+	outline-offset: .2rem;
+}
+
+/* ### ### ### */
+
+.JSpopup {
+	/* Position */
+	position: absolute;
+	z-index: 9;
+	/* Font */
+	font-size: .9rem;
+	/* Settings */
+	overflow: hidden;
+	/* Color */
+	color: var(--anti-color);
+	background-color: var(--main-color);
+	/* Box */
+	padding: 0.3rem 0.5rem;
+	border: 1px solid var(--lite-color);
+}
+
+/* ### ### ### */
+

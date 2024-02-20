@@ -1,0 +1,37 @@
+
+/* ### ### ### */
+
+#weltis__footer > .footer {
+	/* Display */
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	gap: 1rem;
+	/* Position */
+	position: relative;
+	/* Font */
+	font-size: .8rem;
+	/* Color */
+	color: var(--lite-color);
+	background: var(--anti-color);
+	/* Box */
+	padding: 2rem 0;
+	/* Size */
+	min-height: 7rem;
+	width: 100%;
+}
+
+#weltis__footer > .footer .license,
+#weltis__footer > .footer .buttons {
+	/* Box */
+	padding: 0 2rem;
+}
+
+#weltis__footer > .footer .buttons {
+	/* Display */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}

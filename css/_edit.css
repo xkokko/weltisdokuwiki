@@ -1,0 +1,115 @@
+
+/* ### ### ### */
+
+div.editBox {
+	/* Display */
+	/* Flex */
+	/* Position */
+	/* Settings */
+	/* Font */
+	/* Text */
+	/* Color */
+	/* Box */
+	/* Size */
+}
+
+div.picker {
+	/* Display */
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	/* Flex */
+	/* Position */
+	/* Settings */
+	/* Font */
+	font-size: .8rem;
+	/* Text */
+	/* Color */
+	color: var(--anti-color);
+	background-color: var(--main-color);
+	/* Box */
+	border: .1rem solid var(--lite-color);
+	/* Size */
+	width: 20rem;
+}
+
+#tool__bar {
+	/* Position */
+	float: left;
+	/* Box */
+	margin-bottom: .5rem;
+}
+
+button.toolbutton,
+button.pickerbutton {
+	/* Color */
+	color: var(--anti-color);
+	background-color: var(--main-color);
+	/* Box */
+	padding: .2rem;
+	border: .1rem solid var(--anti-color);
+}
+button.toolbutton:hover,
+button.pickerbutton:hover {
+	/* Color */
+	color: var(--anti-color);
+	background-color: var(--main-color);
+	/* Box */
+	outline: .1rem solid var(--dark-color);
+	outline-offset: 1px;
+}
+button.toolbutton:active,
+button.pickerbutton:active {
+	/* Color */
+	color: var(--anti-color);
+	background-color: var(--main-color);
+	/* Box */
+	outline: .2rem solid var(--dark-color);
+	outline-offset: 0;
+}
+
+button.toolbutton img {
+	/* Position */
+	vertical-align: middle;
+	/* Box */
+	padding: 0;
+	border: 0 ! important;
+}
+
+#wiki__editbar {
+	/* Display */
+	display: flex;
+	flex-flow: column;
+	gap: .5rem;
+	/* Position */
+	position: relative;
+	/* Settings */
+	overflow: hidden;
+	/* Box */
+	margin-bottom: 1.5rem;
+}
+
+#wiki__editbar #size__ctl {
+	/* Position */
+	position: absolute;
+	right: 0;
+}
+#wiki__editbar #size__ctl img {
+	/* Settings */
+	cursor: pointer;
+	/* Box */
+	border: 0;
+}
+
+#wiki__editbar .summary {
+	/* Display */
+	display: flex;
+	flex-flow: column;
+	align-items: start;
+	gap: .5rem;
+}
+
+div.license {
+	/* Font */
+	font-size: .8rem;
+}

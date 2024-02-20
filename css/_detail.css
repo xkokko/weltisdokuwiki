@@ -1,0 +1,48 @@
+
+/* ### ### ### */
+
+	/* Vars */
+	/* Display */
+	/* Flex */
+	/* Position */
+	/* Settings */
+	/* Font */
+	/* Text */
+	/* Color */
+	/* Box */
+	/* Size */
+
+#weltis__detail div.img_detail {
+	/* Display */
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	gap: 1rem;
+	/* Position */
+	float: none;
+	/* Text */
+	text-align: left;
+	/* Box */
+	margin-top: 1rem;
+}
+
+#weltis__detail div.img_detail dl {
+	/* Settings */
+	overflow: hidden;
+}
+
+#weltis__detail div.img_detail dl dt {
+	/* Position */
+	float: left;
+	/* Settings */
+	clear: left;
+	/* Text */
+	text-align: right;
+	/* Size */
+	width: 9rem;
+}
+
+#weltis__detail div.img_detail dl dd {
+	/* Box */
+	margin-left: 9.5rem;
+}

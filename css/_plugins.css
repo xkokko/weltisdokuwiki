@@ -1,0 +1,73 @@
+
+/* ### ### ### */
+
+div.plugin_translation {
+	/* Display */
+	display: flex;
+	/* Flex */
+	/* Position */
+	float: revert;
+	/* Settings */
+	/* Font */
+	font-size: .7rem;
+	/* Text */
+	text-align: revert;
+	/* Color */
+	/* Box */
+	padding: 0;
+	margin: 0 0 1rem 0;
+	/* Size */
+}
+
+div.plugin_translation ul {
+	/* Display */
+	display: flex;
+	flex-flow: row wrap;
+	gap: .6rem;
+	/* Box */
+	padding: 0 ! important;
+	margin: 0;
+}
+
+div.plugin_translation ul li {
+	/* Position */
+	float: left;
+	/* Settings */
+	list-style-type: none;
+	/* Box */
+	padding: 0;
+	margin: 0;
+}
+
+div.plugin_translation ul li a:link,
+div.plugin_translation ul li a:hover,
+div.plugin_translation ul li a:active,
+div.plugin_translation ul li a:visited {
+	/* Text */
+	text-decoration: none;
+	/* Color */
+	color: var(--main-color);
+	/* Box */
+	padding: .2rem .3rem;
+	border: 0;
+	margin: 0;
+}
+
+div.plugin_translation ul li a.wikilink1:link,
+div.plugin_translation ul li a.wikilink1:hover,
+div.plugin_translation ul li a.wikilink1:active,
+div.plugin_translation ul li a.wikilink1:visited {
+	/* Color */
+	background-color: var(--anti-color);
+}
+
+div.plugin_translation ul li a.wikilink2:link,
+div.plugin_translation ul li a.wikilink2:hover,
+div.plugin_translation ul li a.wikilink2:active,
+div.plugin_translation ul li a.wikilink2:visited {
+	/* Color */
+	background-color: var(--lite-color);
+}
+
+/* ### ### ### */
+
