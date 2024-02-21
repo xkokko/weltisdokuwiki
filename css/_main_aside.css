@@ -27,7 +27,6 @@
 	padding: 2rem;
 	/* Size */
 	width: var(--max-width-sidebar);
-	box-sizing: border-box;
 }
 
 @media only screen and (max-width: @ini_tablet_width) {
@@ -48,6 +47,7 @@
 		padding: 1rem;
 		border: .1rem solid var(--lite-color);
 		/* Size */
+		box-sizing: border-box;
 		width: 100%;
 	}
 }
