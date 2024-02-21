@@ -17,6 +17,8 @@
 	right: 3rem;
 	bottom: 3rem;
 	z-index: 2;
+	/* Settings */
+	opacity: .5;
 	/* Color */
 	background: var(--lite-color);
 	/* Box */
@@ -28,6 +30,11 @@
 	display: none;
 	/* Box */
 	padding: 0 0 0 1rem;
+}
+
+#action__top > .action.top:hover {
+	/* Settings */
+	opacity: 1;
 }
 
 #action__top > .action.top:hover > span,

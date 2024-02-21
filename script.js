@@ -33,7 +33,7 @@ function tpl_dokuwiki_mobile(){
     jQuery('html').removeClass(device_classes).addClass(device_class);
 
     // handle some layout changes based on change in device
-    var $handle = jQuery('#dokuwiki__aside h3.toggle');
+    var $handle = jQuery('#weltis__aside h3.toggle');
     var $toc = jQuery('#dw__toc h3');
 
     if (device_class == 'desktop') {
@@ -60,20 +60,20 @@ function tpl_dokuwiki_mobile(){
 
 jQuery(function(){
     var resizeTimer;
-    dw_page.makeToggle('#dokuwiki__aside h3.toggle','#dokuwiki__aside div.content');
+    dw_page.makeToggle('#weltis__aside h3.toggle','#weltis__aside div.content');
 
-    tpl_dokuwiki_mobile();
-    jQuery(window).bind('resize',
-        function(){
-            if (resizeTimer) clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(tpl_dokuwiki_mobile,200);
-        }
-    );
+	tpl_dokuwiki_mobile();
+	jQuery(window).bind('resize',
+		function(){
+			if (resizeTimer) clearTimeout(resizeTimer);
+			resizeTimer = setTimeout(tpl_dokuwiki_mobile,200);
+		}
+	);
 
     // increase sidebar length to match content (desktop mode only)
-    var $sidebar = jQuery('.desktop #dokuwiki__aside');
+    var $sidebar = jQuery('.desktop #weltis__aside');
     if($sidebar.length) {
-        var $content = jQuery('#dokuwiki__content div.page');
+        var $content = jQuery('#weltis__content div.page');
         $content.css('min-height', $sidebar.height());
     }
 });

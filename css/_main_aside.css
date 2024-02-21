@@ -1,15 +1,55 @@
 
 /* ### ### ### */
 
+#weltis__aside h3.toggle {
+	/* Display */
+	display: none;
+	/* Font */
+	font-size: .9rem;
+	/* Box */
+	padding: 0;
+	margin: 0;
+}
+
+.aside h3 {
+	/* Box */
+	margin: 0 0 .5rem 0;
+}
+
 #weltis__aside > .aside {
 	/* Font */
 	font-size: .8rem;
+	/* Position */
+	position: relative;
 	/* Settings */
 	word-wrap: break-word;
 	/* Box */
 	padding: 2rem;
 	/* Size */
-	width: 12rem;
+	width: var(--max-width-sidebar);
+	box-sizing: border-box;
+}
+
+@media only screen and (max-width: @ini_tablet_width) {
+	#weltis__aside h3.toggle {
+		/* Display */
+		display: block;
+	}
+	
+	#weltis__aside h3.toggle.open {
+		/* Box */
+		padding: 0 0 .5rem 0;
+		border-bottom: .1rem solid var(--lite-color);
+		margin: 0 0 1rem 0;
+	}
+	
+	#weltis__aside > .aside {
+		/* Box */
+		padding: 1rem;
+		border: .1rem solid var(--lite-color);
+		/* Size */
+		width: 100%;
+	}
 }
 
 #weltis__aside > .aside li ul,

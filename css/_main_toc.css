@@ -23,12 +23,25 @@ div#dw__toc {
 	border-width: .1rem 0 0 .1rem;
 	margin: 0 0 .5rem 1.5rem;
 	/* Size */
-	width: 16rem;
+	width: 12rem;
+}
+
+@media only screen and (max-width: @ini_tablet_width) {
+	div#dw__toc {
+		/* Settings */
+		float: none;
+		/* Box */
+		border-width: 0 0 .1rem 0;
+		margin: 0 0 1rem 0;
+		/* Size */
+		width: auto;
+	}
 }
 
 div#dw__toc h3,
 div#dw__toc ul {
 	/* Box */
+	padding: 0;
 	margin: 0;
 }
 
@@ -41,9 +54,4 @@ div#dw__toc ul li {
 	/* Box */
 	padding: 0;
 	margin: 0;
-}
-
-div#dw__toc strong > span {
-	/* Box */
-	margin-right: 1rem;
 }

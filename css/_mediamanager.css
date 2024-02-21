@@ -45,11 +45,7 @@
 	min-width: 10em;
 }
 
-#mediamanager__page .namespaces h2,
-#mediamanager__page .filelist ul.tabs,
-#mediamanager__page .filelist ul.tabs li,
-#mediamanager__page .file ul.tabs,
-#mediamanager__page .file ul.tabs li {
+#mediamanager__page .namespaces h2 {
 	/* Dsiplay */
 	display: flex;
 	/* Settings */
@@ -65,11 +61,7 @@
 	width: fit-content;
 }
 
-#mediamanager__page .namespaces h2,
-#mediamanager__page .filelist ul.tabs li strong,
-#mediamanager__page .filelist ul.tabs li a,
-#mediamanager__page .file ul.tabs li strong,
-#mediamanager__page .file ul.tabs li a {
+#mediamanager__page .namespaces h2 {
 	/* Position */
 	position: relative;
 	z-index: 2;
@@ -86,16 +78,6 @@
 	/* Box */
 	padding: .4rem .8rem;
 	margin: 0 .1rem 0 .2rem;
-}
-#mediamanager__page .filelist ul.tabs li a,
-#mediamanager__page .file ul.tabs li a {
-	/* Color */
-	background-color: var(--dark-color);
-}
-#mediamanager__page .filelist ul.tabs li a:hover,
-#mediamanager__page .file ul.tabs li a:hover {
-	/* Color */
-	background-color: var(--lite-color);
 }
 
 #mediamanager__page .filelist {
@@ -254,20 +236,6 @@
 
 
 /* ### ### ### */
-
-#mediamanager__page .panelHeader {
-	/* Settings */
-	overflow: hidden;
-	/* Font */
-	font-size: .9rem;
-	/* Text */
-	text-align: left;
-	/* Color */
-	color: var(--main-color);
-	background: var(--lite-color);
-	/* Box */
-	padding: .4rem .5rem;
-}
 
 #mediamanager__page .panelHeader h3 {
 	/* Font */

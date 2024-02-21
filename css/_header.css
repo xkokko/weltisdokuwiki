@@ -30,7 +30,8 @@
 #weltis__header .headings .title {
 	/* Font */
 	font-family: var(--title-font), Verdana, sans-serif;
-	font-size: 2rem;
+	font-size: var(--title-size);
+	font-weight: var(--title-weight);
 	/* Text */
 	text-transform: var(--title-text);
 	/* Box */
