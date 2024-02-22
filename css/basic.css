@@ -333,6 +333,14 @@ textarea.edit {
 
 /* ### ### ### */
 
+hr {
+	/* Box */
+	border: solid var(--lite-color);
+	border-width: .1rem 0 0 0;
+}
+
+/* ### ### ### */
+
 form {
 	/* Display */
 	display: inline;
