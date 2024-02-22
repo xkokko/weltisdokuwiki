@@ -1,7 +1,7 @@
 base     weltis
 author   Cosmo Cocconcelli
 email    c.wiki@drw.ng
-date     2024-02-21
+date     2024-02-22
 name     Weltis Template
 desc     Official Weltis Dokuwiki Template
 url      https://github.com/xkokko/weltisdokuwiki
